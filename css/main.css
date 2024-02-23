@@ -1,0 +1,138 @@
+* {
+  font-family: "Roboto";
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: rgba(210, 224, 224, 0.5);
+}
+
+.sec-head h1 {
+  border-bottom: 1px solid #999;
+  padding-bottom: 10px;
+}
+.sec-head p {
+  color: #999;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header ul li {
+  border: none !important;
+  background-color: transparent !important;
+  font-size: 10px;
+  font-weight: 500;
+  color: #333 !important;
+  display: block;
+  transition: 0.5s;
+}
+header ul li:hover {
+  color: #1112fa !important;
+  margin-top: -2px;
+}
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: #eee;
+  margin: 0 auto;
+}
+
+.hero-section div {
+  height: 350px;
+  position: relative;
+}
+
+.hero-section .text {
+  flex-basis: 57%;
+  padding: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.hero-section > div:last-child::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.1;
+  border-radius: 50%;
+}
+
+.hero-section img {
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.hero-section .text .color {
+  color: #1112fa;
+}
+.hero-section .text p {
+  color: #777;
+}
+.hero-section .text button {
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #1112fa;
+  opacity: 0.8;
+  transition: 0.3s;
+  color: white;
+  border: none;
+  margin-top: 40px;
+}
+.hero-section .text button:hover {
+  opacity: 1;
+}
+
+.hero-section .text ul {
+  width: 50%;
+}
+
+.story-line {
+  padding: 0 10px;
+  border-left: 2px solid #1112fa90;
+}
+
+.story-line .box {
+  padding: 10px;
+  position: relative;
+  background-color: #99999990;
+  margin-bottom: 10px;
+}
+.story-line .box::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  left: -16px;
+  top: 50%;
+  transform: rotate(45deg);
+  position: absolute;
+  border: 2px solid #1112fa;
+  background-color: #1112fa;
+}
+
+.story-line .box h3 {
+  color: #eee;
+}
+.story-line .box p {
+  color: #333;
+  padding-left: 10px;
+}
