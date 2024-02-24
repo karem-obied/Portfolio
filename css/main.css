@@ -108,7 +108,7 @@ hr {
 
 .story-line {
   padding: 0 10px;
-  border-left: 2px solid #1112fa90;
+  border-left: 2px solid #999;
 }
 
 .story-line .box {
@@ -130,9 +130,76 @@ hr {
 }
 
 .story-line .box h3 {
-  color: #eee;
+  color: #fff;
 }
 .story-line .box p {
   color: #333;
   padding-left: 10px;
+}
+
+.statsBox > div {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+}
+.statsBox .stats-bars .bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  gap: 20px;
+  flex-basis: 40%;
+  margin: 10px;
+}
+.statsBox .stats-bars .bar .text {
+  display: flex;
+  color: #777;
+  justify-content: space-between;
+}
+.statsBox .stats-bars .bar .text .percent {
+  color: #1112fa80;
+}
+.statsBox .stats-bars .barbar {
+  width: 100%;
+  height: 5px;
+  position: relative;
+  background-color: #999;
+  border-radius: 2px;
+}
+.statsBox .stats-bars .barbar div {
+  height: 5px;
+  width: attr(data-bar);
+  position: absolute;
+  left: 0;
+  border-radius: 2px;
+  top: 0;
+  background-color: #1112fa80;
+}
+.statsBox .capeable {
+  border-left: 2px solid #999;
+}
+.statsBox .capeable .text {
+  color: #999;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.statsBox .capeable > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.statsBox .capeable > div div {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 50px;
+  color: #777;
 }
