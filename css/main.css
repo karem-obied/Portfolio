@@ -211,14 +211,16 @@ hr {
 }
 
 .projects-box .project {
-  flex-basis: 100%;
+  flex-basis: 45%;
   border: 1px solid #999;
   border-radius: 6px;
   gap: 10px;
+  flex-direction: column;
   overflow: hidden;
 }
 .projects-box .project .img-fluid {
   width: 100%;
+  height: 200px;
 }
 .projects-box .project .text {
   display: flex;
@@ -233,7 +235,7 @@ hr {
 }
 .projects-box .project .text p {
   color: #999;
-  font-size: 15px;
+  font-size: 14px;
 }
 .projects-box .project .text button {
   border: 1px solid #1112fa;
@@ -243,4 +245,45 @@ hr {
 }
 .projects-box .project .text button:hover {
   filter: brightness(1.1);
+}
+
+.jobs {
+  border: 1px solid #999;
+  border-radius: 6px;
+}
+.zero {
+  text-align: center;
+}
+.zero h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.zero p {
+  color: #555;
+  margin-bottom: 15px;
+}
+.zero button {
+  color: white;
+  background-color: #1112fa;
+  filter: brightness(0.9);
+}
+.zero button:hover,
+.contactForm button:hover {
+  background-color: #1112fa;
+  color: white;
+  filter: brightness(1.1);
+}
+
+.contactForm {
+  width: 80%;
+}
+.contactForm input,
+.contactForm textarea {
+  border: 1px solid #999;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.contactForm button {
+  background-color: #1112fa;
+  color: white;
 }
