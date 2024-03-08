@@ -1,3 +1,10 @@
+:root {
+  --body-color: rgba(210, 224, 224, 0.5);
+  --paragraph-color: #999;
+  --main-color: #1112fa;
+  --gray: #333;
+}
+
 * {
   font-family: "Roboto";
 }
@@ -10,15 +17,15 @@ img {
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background-color: rgba(210, 224, 224, 0.5);
+  background-color: var(--body-color);
 }
 
 .sec-head h1 {
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid var(--paragraph-color);
   padding-bottom: 10px;
 }
 .sec-head p {
-  color: #999;
+  color: var(--paragraph-color);
 }
 
 .container {
@@ -44,7 +51,7 @@ header ul li {
   transition: 0.5s;
 }
 header ul li:hover {
-  color: #1112fa !important;
+  color: var(--main-color) !important;
   margin-top: -2px;
 }
 hr {
@@ -84,7 +91,7 @@ hr {
 }
 
 .hero-section .text .color {
-  color: #1112fa;
+  color: var(--main-color);
 }
 .hero-section .text p {
   color: #777;
@@ -92,7 +99,7 @@ hr {
 .hero-section .text button {
   width: fit-content;
   padding: 10px 20px;
-  background-color: #1112fa;
+  background-color: var(--main-color);
   opacity: 0.8;
   transition: 0.3s;
   color: white;
@@ -109,13 +116,13 @@ hr {
 
 .story-line {
   padding: 0 10px;
-  border-left: 2px solid #999;
+  border-left: 2px solid var(--paragraph-color);
 }
 
 .story-line .box {
   padding: 10px;
   position: relative;
-  background-color: #99999990;
+  background-color: var(--paragraph-color);
   margin-bottom: 10px;
 }
 .story-line .box::after {
@@ -126,8 +133,8 @@ hr {
   top: 50%;
   transform: rotate(45deg);
   position: absolute;
-  border: 2px solid #1112fa;
-  background-color: #1112fa;
+  border: 2px solid var(--main-color);
+  background-color: var(--main-color);
 }
 
 .story-line .box h3 {
@@ -159,13 +166,13 @@ hr {
   justify-content: space-between;
 }
 .statsBox .stats-bars .bar .text .percent {
-  color: #1112fa80;
+  color: var(--main-color) 80;
 }
 .statsBox .stats-bars .barbar {
   width: 100%;
   height: 5px;
   position: relative;
-  background-color: #999;
+  background-color: var(--paragraph-color);
   border-radius: 2px;
 }
 .statsBox .stats-bars .barbar div {
@@ -175,13 +182,13 @@ hr {
   left: 0;
   border-radius: 2px;
   top: 0;
-  background-color: #1112fa80;
+  background-color: var(--main-color) 80;
 }
 .statsBox .capeable {
-  border-left: 2px solid #999;
+  border-left: 2px solid var(--paragraph-color);
 }
 .statsBox .capeable .text {
-  color: #999;
+  color: var(--paragraph-color);
   text-align: center;
   display: flex;
   justify-content: center;
@@ -212,7 +219,7 @@ hr {
 
 .projects-box .project {
   flex-basis: 45%;
-  border: 1px solid #999;
+  border: 1px solid var(--paragraph-color);
   border-radius: 6px;
   gap: 10px;
   flex-direction: column;
@@ -234,12 +241,12 @@ hr {
   color: #777;
 }
 .projects-box .project .text p {
-  color: #999;
+  color: var(--paragraph-color);
   font-size: 14px;
 }
 .projects-box .project .text button {
-  border: 1px solid #1112fa;
-  background-color: #1112fa;
+  border: 1px solid var(--main-color);
+  background-color: var(--main-color);
   color: white;
   transition: 0.4s;
 }
@@ -248,7 +255,7 @@ hr {
 }
 
 .jobs {
-  border: 1px solid #999;
+  border: 1px solid var(--paragraph-color);
   border-radius: 6px;
 }
 .zero {
@@ -264,12 +271,12 @@ hr {
 }
 .zero button {
   color: white;
-  background-color: #1112fa;
+  background-color: var(--main-color);
   filter: brightness(0.9);
 }
 .zero button:hover,
 .contactForm button:hover {
-  background-color: #1112fa;
+  background-color: var(--main-color);
   color: white;
   filter: brightness(1.1);
 }
@@ -279,11 +286,11 @@ hr {
 }
 .contactForm input,
 .contactForm textarea {
-  border: 1px solid #999;
+  border: 1px solid var(--paragraph-color);
   border-radius: 6px;
   margin-bottom: 15px;
 }
 .contactForm button {
-  background-color: #1112fa;
+  background-color: var(--main-color);
   color: white;
 }
