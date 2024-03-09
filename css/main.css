@@ -23,6 +23,7 @@ body {
 .sec-head h1 {
   border-bottom: 1px solid var(--paragraph-color);
   padding-bottom: 10px;
+  width: fit-content;
 }
 .sec-head p {
   color: var(--paragraph-color);
@@ -293,4 +294,60 @@ hr {
 .contactForm button {
   background-color: var(--main-color);
   color: white;
+}
+
+.person .content {
+  gap: 20px;
+}
+.person .content > div {
+  flex-basis: 50%;
+}
+.person .content .strengths {
+  position: relative;
+}
+.person .content .strengths::after {
+  height: 100%;
+  content: "";
+  width: 5px;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  border-radius: 6px;
+  border: 2px solid #999;
+}
+.person .content .point {
+  position: relative;
+  border: 1px solid;
+  padding: 10px;
+  background-color: #f2f2f2;
+  margin: 10px;
+  border-radius: 6px;
+}
+.person .content .strength {
+  border-color: #1112fa;
+}
+.person .content .weakness {
+  border-color: #fa1111;
+}
+.person .content .strengths .point::after,
+.person .content .weaknesses .point::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  z-index: 10;
+  border-radius: 50%;
+  top: 9%;
+  border: 2px solid;
+}
+
+.person .content .strengths .point::after {
+  right: -23.5px;
+  border-color: #1112fa;
+}
+
+.person .content .weaknesses .point::after {
+  left: -28px;
+  border-color: #fa1111;
 }
