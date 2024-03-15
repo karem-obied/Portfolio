@@ -42,6 +42,10 @@ a {
   color: inherit;
 }
 
+section {
+  min-height: fit-content !important;
+}
+
 header ul li {
   border: none !important;
   background-color: transparent !important;
@@ -123,7 +127,7 @@ hr {
 .story-line .box {
   padding: 10px;
   position: relative;
-  background-color: var(--paragraph-color);
+  background-color: #bcbcbc;
   margin-bottom: 10px;
 }
 .story-line .box::after {
@@ -350,4 +354,98 @@ hr {
 .person .content .weaknesses .point::after {
   left: -28px;
   border-color: #fa1111;
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  header li {
+    font-size: 7px !important;
+  }
+
+  .hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-section > div:not(.text) {
+    height: 250px;
+    width: 100%;
+  }
+  .hero-section > div:not(.text) img {
+    border-radius: 0px;
+    object-fit: cover;
+    object-position: 0 -45px;
+  }
+  .hero-section > div:not(.text)::after {
+    background-color: transparent;
+  }
+
+  .hero-section .text {
+    gap: 0;
+  }
+  .hero-section .text button {
+    margin: 0 auto 10px;
+  }
+  .hero-section .text ul {
+    width: 100%;
+  }
+  .sec-head {
+    margin: 10px 0 !important;
+    padding: 0 !important;
+  }
+  h1 {
+    font-size: 23px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 10px;
+  }
+  .story-line {
+    border: none;
+  }
+  .story-line .box::after {
+    background-color: transparent;
+    border: none;
+  }
+
+  .statsBox {
+    flex-direction: column;
+  }
+  .statsBox .stats-bars {
+    margin-bottom: 15px;
+  }
+  .statsBox .stats-bars .bar {
+    gap: 5px !important;
+  }
+  .statsBox .logo {
+    font-size: 10px;
+  }
+  .statsBox .capeable .logo {
+    width: 24%;
+  }
+  .statsBox .capeable .logo svg {
+    font-size: 30px;
+  }
+  .statsBox .capeable {
+    border-left: 0;
+    border-top: 2px solid var(--paragraph-color);
+  }
+  .projects .project {
+    flex-basis: 90%;
+    margin: 0 auto;
+  }
+  .projects .project p {
+    font-size: 10px !important;
+  }
+  .projects .project button {
+    width: 100%;
+    text-transform: capitalize;
+  }
+}
+@media (max-width: 768px) {
 }
