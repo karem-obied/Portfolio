@@ -397,13 +397,13 @@ hr {
     padding: 0 !important;
   }
   h1 {
-    font-size: 23px;
+    font-size: 23px !important;
   }
   h3 {
-    font-size: 16px;
+    font-size: 16px !important;
   }
   p {
-    font-size: 10px;
+    font-size: 10px !important;
   }
   .story-line {
     border: none;
@@ -446,6 +446,29 @@ hr {
     width: 100%;
     text-transform: capitalize;
   }
+  .person .content {
+    flex-direction: column;
+  }
+  .point::after {
+    background-color: transparent;
+    border: none;
+  }
+  .strengths::after {
+    border: none;
+    background-color: transparent;
+  }
+  .prevExp .jobs {
+    border-radius: 0;
+  }
 }
 @media (max-width: 768px) {
+  .hero-section h1 {
+    font: 31px;
+  }
+  .hero-section button {
+    margin-top: 20px !important;
+  }
+  .hero-section img {
+    object-fit: cover !important;
+  }
 }
