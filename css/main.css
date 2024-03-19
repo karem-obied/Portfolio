@@ -5,6 +5,17 @@
   --gray: #333;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #999;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+}
+::-webkit-scrollbar-corner {
+  background-color: #999;
+}
+
 * {
   font-family: "Roboto";
 }
@@ -72,7 +83,7 @@ hr {
 }
 
 .hero-section .text {
-  flex-basis: 57%;
+  flex-basis: 45%;
   padding: 20px;
   gap: 10px;
   display: flex;
@@ -354,6 +365,12 @@ hr {
 .person .content .weaknesses .point::after {
   left: -28px;
   border-color: #fa1111;
+}
+
+footer {
+  background-color: #555;
+  color: white;
+  text-align: center;
 }
 
 @media (max-width: 576px) {
