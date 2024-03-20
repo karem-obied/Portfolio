@@ -193,12 +193,11 @@ hr {
 }
 .statsBox .stats-bars .barbar div {
   height: 5px;
-  width: attr(data-bar);
   position: absolute;
   left: 0;
   border-radius: 2px;
   top: 0;
-  background-color: var(--main-color) 80;
+  background-color: var(--main-color);
 }
 .statsBox .capeable {
   border-left: 2px solid var(--paragraph-color);
